@@ -1,173 +1,103 @@
 -- import: fifthtry.github.io/package-doc/doc as pd
--- import: fifthtry.github.io/lato-font/assets as lato-assets
--- import: fifthtry.github.io/package-doc/typography as tf
--- import: fastn
+-- import: fifthtry.github.io/package-doc/forest-theme as ds
+-- import: fastn-community.github.io/lato-font/custom
+-- import: fifthtry.github.io/package-doc/footer
 
 
 
--- ftd.type lato-demo:
-line-height.px: 36
-size.px: 22
-letter-spacing.px: 0
-weight: 400
-font-family: $lato-assets.fonts.Lato
 
+-- ds.page: 
+show-footer: true
+site-name: `lato-font`
 
--- ftd.type lato-demo-heading:
-line-height.px: 56
-size.px: 48
-letter-spacing.px: 0
-font-family: $lato-assets.fonts.Lato
-weight: 400
+-- ds.page.footer:
 
--- ftd.responsive-type small-heading:
-desktop: $lato-demo
-mobile: $lato-demo
+-- footer.fastn-footer:
 
--- ftd.responsive-type large-heading:
-desktop: $lato-demo-heading
-mobile: $lato-demo-heading
+-- end: ds.page.footer
 
+-- pd.package: FTD lato-font package
+name: fastn-community.github.io/lato-font
 
+This FTD font `lato` can be used for your ftd web projects. 
 
--- ftd.column:
-width: fill-container
-padding-horizontal.px: 50
-padding-horizontal.px if {ftd.device == "mobile"}: 20
-background.solid: $inherited.colors.background.base
+To Use this lato inside `FTD` project visit [lato-typography](https://fastn-community.github.io/lato-typography).
 
+-- ds.h3: lato various sizes
 
--- pd.package: Lato - font
-name: fifthtry.github.io/lato-font
-
-This component consist of Google lato font with all it's styles from Thin-100 to Bold-700 Italic.
-
-
--- pd.component: Lato - font
-name: https://github.com/FifthTry/lato-font
-
-This component consist of Google Lato font with all it's styles from Thin-100 to Bold-700 Italic.
-
-
-
--- pd.hidden-code: How to use
-
-include fifthtry.github.io/lato-font package into fastn.ftd file
-
-\-- fastn.dependency: fifthtry.github.io/lato-font/assets as lato
-
-\-- fastn.auto-import: lato
-
-Inside your .ftd file to change for any specific token use:
-
-\-- fastn.type.headline-small.font: $lato.fonts.Lato
-
-\-- ftd.text:
-role: $fastn.type.headline-small
-
-
--- tf.h2: `lato-font` hairline 18px:
-
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.    
-role: $small-heading
+-- ftd.text: 
+role: $custom.lato-size-12-400
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: hairline
 
--- tf.h2: `lato-font` hairline italic 18px:
+`font-size: 12px, font-weight: 400` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.    
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+
+-- ftd.text: 
+role: $custom.lato-size-12-800
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: hairline italic
 
--- tf.h2: `lato-font` light 18px:
+`font-size: 12px, font-weight: 500` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.    
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.lato-size-12-800
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: light
 
--- tf.h2: `lato-font` light italic 18px:
+`font-size: 12px, font-weight: 800` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.    
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+
+-- ftd.text: 
+role: $custom.lato-size-18-400
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: light italic
 
--- tf.h2: `lato-font` regular 18px:
+`font-size: 18px, font-weight: 400` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.    
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.lato-size-18-500
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: regular
 
--- tf.h2: `lato-font` regular strike through 18px:
+`font-size: 18px, font-weight: 500` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.lato-size-18-800
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: regular strike
 
--- tf.h2: `lato-font` regular underline 18px:
+`font-size: 18px, font-weight: 800` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.lato-size-48-400
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: regular underline
 
--- tf.h2: `lato-font` regular italic 18px:
+`font-size: 48px, font-weight: 400` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text: 
+role: $custom.lato-size-48-500
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: regular italic
 
--- tf.h2: `lato-font` bold 18px:
+`font-size: 48px, font-weight: 500` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
+👉 The quick brown fox jumps over the lazy dog 
+
+-- ftd.text:
+role: $custom.lato-size-48-800
 color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: bold
 
--- tf.h2: `lato-font` bold italic 18px:
+`font-size: 48px, font-weight: 800` 
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
-color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: bold italic
+👉 The quick brown fox jumps over the lazy dog 
 
--- tf.h2: `lato-font` heavy 18px:
+-- end: ds.page
 
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
-color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: heavy
-
--- tf.h2: `lato-font` heavy italic 18px:
-
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $small-heading
-color: $inherited.colors.text-strong
-margin-bottom.px: 24
-;;style: heavy italic
-
--- tf.h2: `lato-font` heading regular 48px:
-
--- ftd.text: MANIMBANG manowo ngakoni marang martabat alamiah sarta kang.  
-role: $large-heading
-color: $inherited.colors.text-strong
-margin-bottom.px: 40
-;;style: regular
-
--- end: ftd.column

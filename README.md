@@ -12,37 +12,13 @@ Designers: Łukasz Dziedzic, Principal design
 
 ## How To Use This Font In Your fastn Package:
 
-[Read the docs and demo](https://fifthtry.github.io/lato-font).
+[Read the docs and demo](https://fastn-community.github.io/lato-font).
 
-TLRD:
-
-Include fifthtry.github.io/lato-font package into `fastn.ftd` file:
-
-```ftd
-;-- fastn.dependency: fifthtry.github.io/lato-font
-```
-
-Inside your `fastn/config.ftd` use the font:
-
-```ftd
-;-- import: fifthtry.github.io/lato-font/assets as lato
-
-;-- fastn.type.headline-small: $lato.fonts.Lato
-```
-
-Now if in any file you do:
-
-```ftd
-;-- ftd.text:
-role: $fastn.type.headline-small
-```
-
-You will see the `lato` font.
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://fastn.dev/) or jump into our [FifthTry Discord 
-server](https://discord.gg/bucrdvptYd).
+Feel free to check [our documentation](https://fastn.dev/) or jump into our
+[FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 ## License
 
